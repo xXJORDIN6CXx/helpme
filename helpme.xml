@@ -1,29 +1,28 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="118" inline="true" x="283" y="6">
-    <value name="TIMES">
-      <block type="math_number" id="125">
-        <field name="NUM">5</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="13">
+  <block type="movement_forward" id="19" x="206" y="58">
+    <next>
+      <block type="movement_forward" id="29">
         <next>
-          <block type="movement_forward" id="50">
+          <block type="movement_forward" id="40">
             <next>
-              <block type="movement_forward" id="60">
+              <block type="movement_right" id="50">
                 <next>
-                  <block type="movement_forward" id="70">
+                  <block type="movement_right" id="60">
                     <next>
-                      <block type="led_select" id="39" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="math_number" id="104">
-                            <field name="NUM">5</field>
-                          </block>
-                        </value>
+                      <block type="movement_reverse" id="70">
                         <next>
-                          <block type="oled_color" id="80">
-                            <field name="OBJECT">GREEN</field>
+                          <block type="movement_right" id="80">
+                            <next>
+                              <block type="movement_reverse" id="90">
+                                <next>
+                                  <block type="movement_reverse" id="100">
+                                    <next>
+                                      <block type="movement_left" id="110"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -35,6 +34,6 @@
           </block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
